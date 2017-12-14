@@ -1,0 +1,18 @@
+
+    
+
+function helperWebservice () {
+	
+	helperWebservice.prototype.ws = require("ws");
+	
+	helperRedis.prototype.redisClient = this.redis.createClient();
+	
+	
+	helperRedis.prototype.getRedisClient = function() {
+		
+		
+		return helperRedis.prototype.redisClient;
+	};
+
+}
+module.exports = helperRedis;

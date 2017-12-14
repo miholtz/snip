@@ -1,0 +1,21 @@
+var mysql = require('mysql');
+
+function helperDatabase () {
+
+	helperDatabase.prototype.mysql = mysql;
+
+	helperDatabase.prototype.connection = mysql.createConnection({
+		host: "localhost",
+		user: "tripdb",
+		password: "tripdb",
+		database: "sniper"
+	});
+
+	helperDatabase.prototype.connection.connect();
+
+	helperDatabase.prototype.getDatabaseConnection = function() {
+		return helperDatabase.prototype.connection;
+	};
+
+}
+module.exports = helperDatabase;

@@ -1,0 +1,15 @@
+
+    
+
+function helper () {
+
+	
+	helper.prototype.isSet = function() {
+		
+		
+		
+		
+	};
+
+}
+module.exports = helper;

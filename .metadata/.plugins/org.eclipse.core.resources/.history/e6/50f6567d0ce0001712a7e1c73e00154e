@@ -1,0 +1,20 @@
+
+
+window.sniper = function() {
+	
+	window.sniper.prototype.mysql = require('mysql');
+	
+	window.sniper.prototype.connection = mysql.createConnection({
+		host: "localhost",
+		user: "yourusername",
+		password: "yourpassword"
+	});
+	
+	window.sniper.prototype.connection.connect();
+	
+	window.sniper.prototype.getDatabaseConnection = function() {
+		
+		return window.sniper.connection;
+	};
+	
+};

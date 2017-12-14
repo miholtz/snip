@@ -1,0 +1,20 @@
+
+
+window.sniper = function() {
+	
+	this.mysql = require('mysql');
+	
+	this.connection = mysql.createConnection({
+		host: "localhost",
+		user: "yourusername",
+		password: "yourpassword"
+	});
+	
+	this.connection.connect();
+	
+	this.getDatabaseConnection = function() {
+		
+		return this.connection;
+	};
+	
+};

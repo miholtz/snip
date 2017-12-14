@@ -1,0 +1,7 @@
+
+
+window.sniper = function() {
+	
+	this.mysql = require('mysql');
+	
+};

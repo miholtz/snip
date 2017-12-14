@@ -1,0 +1,23 @@
+
+var mysql = require('mysql');
+function sniper() {
+
+	sniper.prototype.mysql = mysql;
+	
+	sniper.prototype.connection = mysql.createConnection({
+		host: "localhost",
+		user: "tripdb",
+		password: "tripdb",
+		database: "sniper"
+	});
+	
+	sniper.prototype.connection.connect();
+	
+	sniper.prototype.getDatabaseConnection = function() {
+		return sniper.prototype.connection;
+	};
+
+};
+
+
+module.exports = sniper;
