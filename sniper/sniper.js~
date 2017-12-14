@@ -6,7 +6,6 @@ helperDatabase = new helperDatabase();
 helperRedis = new helperRedis();
 helperWebservice = new helperWebservice();
 
-//test
 
 var redisClient = helperRedis.getRedisClient();
 
