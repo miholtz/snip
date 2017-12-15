@@ -5,10 +5,10 @@ function helperDatabase () {
 	helperDatabase.prototype.mysql = mysql;
 
 	helperDatabase.prototype.connection = mysql.createConnection({
-		host: "",
-		user: "",
-		password: "",
-		database: ""
+		host: "localhost",
+		user: "sniper",
+		password: "snip",
+		database: "sniper"
 	});
 
 	helperDatabase.prototype.connection.connect();

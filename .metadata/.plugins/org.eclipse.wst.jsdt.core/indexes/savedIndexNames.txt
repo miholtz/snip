@@ -1,6 +1,0 @@
-INDEX VERSION 1.122+/home/michel/coinspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-1342129304.index
-2182983857.index
-3144908643.index
-1454356967.index
-2999445299.index

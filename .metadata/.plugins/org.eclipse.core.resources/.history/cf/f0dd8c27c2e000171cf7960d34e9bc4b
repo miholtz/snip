@@ -1,9 +1,0 @@
-var redis = require("redis");
-    
-
-function helperRedis () {
-	
-	helperRedis.prototype.redisClient = redis.createClient();
-
-}
-module.exports = helperRedis;

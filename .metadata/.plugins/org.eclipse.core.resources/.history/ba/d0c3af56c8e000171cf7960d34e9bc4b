@@ -1,9 +1,0 @@
-
-    
-
-function helperWebservice () {
-	
-	helperWebservice.prototype.webSocket = require("ws");
-	
-}
-module.exports = helperWebservice;
